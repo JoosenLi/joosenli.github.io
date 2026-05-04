@@ -32,26 +32,430 @@ Before starting my PhD in France, I worked on spectral CT and low-field MRI Reco
 
 You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.linkedin.com/in/qiaoxin-li-37a177310/)**, and **[GitHub](https://github.com/joosenli)** here.
 
-🧩🧩🧩
-Beyond research, I enjoy a variety of activities that keep my life balanced and inspiring.
 
-🏃‍♂️I am passionate about **long-distance running** and have participated in several marathons, including the **Shenzhen Marathon**, **Qinhuangdao Marathon**, and multiple half marathons such as **Nanshan**, **Huangpu**, and **Qingyuan**. Running gives me a strong sense of rhythm and vitality — it reminds me of the dynamics and beating of life itself.
+🧩Beyond research, I also enjoy a variety of activities that keep my life balanced and inspiring:
 
-🍳I also enjoy **cooking** (honestly because I love eating!). I like experimenting with different recipes and often invite friends over to share meals together.
+<section class="life-dashboard" aria-labelledby="life-dashboard-title">
+  <details class="life-dashboard__egg">
+    <summary>
+      <h2 id="life-dashboard-title">Life Dashboard</h2>
+      <span class="life-dashboard__spark" aria-hidden="true">✦</span>
+    </summary>
+    <p>Good ideas often flicker into view mid-run or beside a train window, then settle after a generous meal or a close conversation with nature.</p>
+  </details>
+  <div class="life-dashboard__grid">
+    <button class="life-card life-card--button life-gallery__open" type="button" data-gallery="lens" aria-haspopup="dialog" aria-controls="life-gallery">
+      <span class="life-card__icon" aria-hidden="true">📷</span>
+      <span class="life-card__title">Lens</span>
+      <span class="life-card__hint">light, details, quiet moments</span>
+      <p>Even after ten thousand glances, I am still moved by the slow bloom of sunrise, the unhurried colors of sunset, sudden rainbows, unnoticed flowers, the sea retelling itself, the hush of deserts, and the quiet authority of snow-capped mountains.</p>
+      <span class="life-card__ref">Open photo wall</span>
+    </button>
+    <button class="life-card life-card--button life-gallery__open" type="button" data-gallery="travel" aria-haspopup="dialog" aria-controls="life-gallery">
+      <span class="life-card__icon" aria-hidden="true">🚗</span>
+      <span class="life-card__title">Roads</span>
+      <span class="life-card__hint">travel, trains, open air</span>
+      <p>Road trips, train windows, travel, and movies help me reset perspective after dense research weeks.</p>
+      <span class="life-card__ref">Open photo wall</span>
+    </button>
+    <button class="life-card life-card--button life-gallery__open" type="button" data-gallery="kitchen" aria-haspopup="dialog" aria-controls="life-gallery">
+      <span class="life-card__icon" aria-hidden="true">🍳</span>
+      <span class="life-card__title">Kitchen</span>
+      <span class="life-card__hint">small experiments, big appetite</span>
+      <p>I like cooking because I like eating first, and the best recipes are often the ones that bring friends to the table.</p>
+      <span class="life-card__ref">Open photo wall</span>
+    </button>
+    <button class="life-card life-card--button life-gallery__open" type="button" data-gallery="run" aria-haspopup="dialog" aria-controls="life-gallery">
+      <span class="life-card__icon" aria-hidden="true">🏃</span>
+      <span class="life-card__title">Running</span>
+      <span class="life-card__hint">rhythm, breath, distance</span>
+      <p>Long-distance running gives me a steady rhythm and a quiet sense of vitality, from marathons to ordinary training days.</p>
+      <span class="life-card__ref">Open photo wall</span>
+    </button>
+  </div>
+</section>
 
-📷Another hobby of mine is **photography**. I enjoy capturing peaceful and beautiful moments of daily life🌊🌄 — it helps me slow down and appreciate small details, and it often brings me comfort and renewed hope during difficult times.
+<dialog class="kitchen-gallery" id="life-gallery" aria-labelledby="life-gallery-title">
+  <div class="kitchen-gallery__panel">
+    <header class="kitchen-gallery__header">
+      <div>
+        <h3 id="life-gallery-title">Photo Wall</h3>
+        <p class="life-gallery__intro">A few small scenes, changing slowly.</p>
+      </div>
+      <button class="kitchen-gallery__close" type="button" aria-label="Close photo wall">×</button>
+    </header>
+    <div class="kitchen-gallery__stage">
+      <div class="kitchen-gallery__photos" aria-live="polite"></div>
+      <div class="life-gallery__viewer" hidden>
+        <button class="life-gallery__viewer-close" type="button" aria-label="Close enlarged photo">×</button>
+        <img src="" alt="">
+        <div class="life-gallery__viewer-caption"></div>
+      </div>
+    </div>
+  </div>
+</dialog>
 
-Outside of these, I enjoy **road trips and driving**🚗, **traveling**🌍, and watching **movies**🎬.
+<script>
+  (function () {
+    const galleries = {
+      run: {
+        title: "Running Wall",
+        intro: "Race mornings, group runs, and the rhythm of long roads.",
+        altPrefix: "Running moment",
+        photos: [
+          { file: "/images/galleries/run/run-01.jpg", label: "Hometown Run", location: "Hometown, China" },
+          { file: "/images/galleries/run/run-02.jpg", label: "Nanshan Half Marathon", location: "Nanshan, Shenzhen, China" },
+          { file: "/images/galleries/run/run-03.jpg", label: "Nanshan Marathon", location: "Nanshan, Shenzhen, China" },
+          { file: "/images/galleries/run/run-04.jpg", label: "Nanshan Marathon Finish", location: "Nanshan, Shenzhen, China" },
+          { file: "/images/galleries/run/run-05.jpg", label: "Nanshan Marathon Day", location: "Nanshan, Shenzhen, China" },
+          { file: "/images/galleries/run/run-06.jpg", label: "Running Club Visit", location: "Nankai University, Tianjin, China" },
+          { file: "/images/galleries/run/run-07.jpg", label: "Running Club Outing", location: "Tianjin, China" },
+          { file: "/images/galleries/run/run-08.jpg", label: "Qinhuangdao Marathon", location: "Qinhuangdao, Hebei, China" },
+          { file: "/images/galleries/run/run-09.jpg", label: "Tsinghua Long Run Festival", location: "Tsinghua University, Beijing, China" },
+          { file: "/images/galleries/run/run-10.jpg", label: "Qingyuan Marathon", location: "Qingyuan, Guangdong, China" },
+          { file: "/images/galleries/run/run-11.jpg", label: "Shenzhen Marathon", location: "Shenzhen, China" },
+          { file: "/images/galleries/run/run-12.jpg", label: "Yanqi Lake Run", location: "Yanqi Lake, Beijing, China" },
+          { file: "/images/galleries/run/run-13.jpg", label: "Yanqi Lake Running Club", location: "Yanqi Lake, Beijing, China" },
+          { file: "/images/galleries/run/run-14.jpg", label: "Yanqi Lake Group Run", location: "Yanqi Lake, Beijing, China" },
+          { file: "/images/galleries/run/run-15.jpg", label: "Yanqi Lake Training", location: "Yanqi Lake, Beijing, China" }
+        ]
+      },
+      kitchen: {
+        title: "Kitchen Wall",
+        intro: "Small experiments, big appetite, and a table that is better when shared.",
+        altPrefix: "Homemade dish",
+        photos: [
+          { file: "/images/galleries/kitchen/kitchen-01.jpg", label: "Crispy Pan-Fried Dumplings", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-02.jpg", label: "Big Plate Chicken", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-03.jpg", label: "Braised Noodles with Green Beans", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-04.jpg", label: "Tomato Potato Beef Brisket", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-05.jpg", label: "Dry-Pot Cabbage", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-06.jpg", label: "Braised Pork Ribs", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-07.jpg", label: "Braised Pork Belly", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-08.jpg", label: "Twice-Cooked Pork", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-09.jpg", label: "Homemade Wrap", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-10.jpg", label: "Street-Style Fried Rice", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-11.jpg", label: "Street-Style Fried Noodles", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-12.jpg", label: "Spicy Tomato Beef", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-13.jpg", label: "Chili Pork Stir-Fry", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-14.jpg", label: "Milk Egg Pancake", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-15.jpg", label: "Tomato Noodle Soup", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-16.jpg", label: "Celery Beef", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-17.jpg", label: "Lava Toast", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-18.jpg", label: "Sichuan Boiled Pork", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-19.jpg", label: "Hot and Sour Cabbage", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-20.jpg", label: "Stir-Fried Beef", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-21.jpg", label: "Homemade Crispy Rice", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-22.jpg", label: "Homemade Pan-Fried Buns", location: "Home Kitchen" }
+        ]
+      },
+      lens: {
+        title: "Lens Wall",
+        intro: "Light, water, flowers, mountains, and the quiet luck of looking twice.",
+        altPrefix: "Photograph",
+        photos: [
+          { file: "/images/galleries/lens/lens-01.jpg", label: "Alpine Ridge", location: "The Alps" },
+          { file: "/images/galleries/lens/lens-02.jpg", label: "Small Alpine Chapel", location: "The Alps" },
+          { file: "/images/galleries/lens/lens-03.jpg", label: "Aegean Blue", location: "Aegean Sea, Greece" },
+          { file: "/images/galleries/lens/lens-04.jpg", label: "Spring Blossoms", location: "Paris, France" },
+          { file: "/images/galleries/lens/lens-05.jpg", label: "Coast From Above", location: "Barcelona, Spain" },
+          { file: "/images/galleries/lens/lens-06.jpg", label: "Barcelona Seafront", location: "Barcelona, Spain" },
+          { file: "/images/galleries/lens/lens-07.jpg", label: "Seaside Sunset", location: "Barcelona, Spain" },
+          { file: "/images/galleries/lens/lens-08.jpg", label: "White Sand Lake", location: "Baisha Lake, Xinjiang, China" },
+          { file: "/images/galleries/lens/lens-09.jpg", label: "Brittany Coast", location: "Brittany, France" },
+          { file: "/images/galleries/lens/lens-10.jpg", label: "Paraglider Above the Sea", location: "Brittany, France" },
+          { file: "/images/galleries/lens/lens-11.jpg", label: "Brittany Sunrise", location: "Brittany, France" },
+          { file: "/images/galleries/lens/lens-12.jpg", label: "Sudden Rainbow", location: "France" },
+          { file: "/images/galleries/lens/lens-13.jpg", label: "Spring Flowers", location: "France" },
+          { file: "/images/galleries/lens/lens-14.jpg", label: "Parc de Sceaux", location: "Sceaux, France" },
+          { file: "/images/galleries/lens/lens-15.jpg", label: "Chateau de Sceaux", location: "Sceaux, France" },
+          { file: "/images/galleries/lens/lens-16.jpg", label: "Emerald Lake", location: "Qinghai, China" },
+          { file: "/images/galleries/lens/lens-17.jpg", label: "Huizhou Coast", location: "Huizhou, Guangdong, China" },
+          { file: "/images/galleries/lens/lens-18.jpg", label: "Blue Tears", location: "Dameisha, Shenzhen, China" },
+          { file: "/images/galleries/lens/lens-19.jpg", label: "Malaga Evening", location: "Malaga, Spain" },
+          { file: "/images/galleries/lens/lens-20.jpg", label: "Malaga Dusk", location: "Malaga, Spain" },
+          { file: "/images/galleries/lens/lens-21.jpg", label: "Malaga Beach", location: "Malaga, Spain" },
+          { file: "/images/galleries/lens/lens-22.jpg", label: "Malaga Sunset", location: "Malaga, Spain" },
+          { file: "/images/galleries/lens/lens-23.jpg", label: "Nuremberg Street", location: "Nuremberg, Germany" },
+          { file: "/images/galleries/lens/lens-24.jpg", label: "Pink Field", location: "Nuremberg, Germany" },
+          { file: "/images/galleries/lens/lens-25.jpg", label: "Rainbow Mountains", location: "Zhangye Danxia, Gansu, China" },
+          { file: "/images/galleries/lens/lens-26.jpg", label: "Danxia Ridges", location: "Zhangye Danxia, Gansu, China" },
+          { file: "/images/galleries/lens/lens-27.jpg", label: "Danxia Layers", location: "Zhangye Danxia, Gansu, China" },
+          { file: "/images/galleries/lens/lens-28.jpg", label: "Danxia Colors", location: "Zhangye Danxia, Gansu, China" },
+          { file: "/images/galleries/lens/lens-29.jpg", label: "Qilian Mountains", location: "Qilian Mountains, Qinghai/Gansu, China" },
+          { file: "/images/galleries/lens/lens-30.jpg", label: "Qilian Snow Peaks", location: "Qilian Mountains, China" },
+          { file: "/images/galleries/lens/lens-31.jpg", label: "Qinghai Lake", location: "Qinghai, China" },
+          { file: "/images/galleries/lens/lens-32.jpg", label: "Shenzhen Light", location: "Shenzhen, China" },
+          { file: "/images/galleries/lens/lens-33.jpg", label: "Shuangyue Bay Sunset", location: "Huizhou, Guangdong, China" },
+          { file: "/images/galleries/lens/lens-34.jpg", label: "Autumn at Sceaux", location: "Sceaux, France" },
+          { file: "/images/galleries/lens/lens-35.jpg", label: "Sceaux Autumn Walk", location: "Sceaux, France" },
+          { file: "/images/galleries/lens/lens-36.jpg", label: "Sceaux Autumn Trees", location: "Sceaux, France" },
+          { file: "/images/galleries/lens/lens-37.jpg", label: "Wakhan Corridor", location: "Pamir Plateau, Xinjiang, China" },
+          { file: "/images/galleries/lens/lens-38.jpg", label: "Malaga Coast", location: "Malaga, Spain" },
+          { file: "/images/galleries/lens/lens-39.jpg", label: "Aegean Horizon", location: "Aegean Sea, Greece" },
+          { file: "/images/galleries/lens/lens-40.jpg", label: "Sunrise From the Window", location: "In Flight" },
+          { file: "/images/galleries/lens/lens-41.jpg", label: "Neuschwanstein", location: "Bavaria, Germany" },
+          { file: "/images/galleries/lens/lens-42.jpg", label: "Yanqi Lake", location: "Beijing, China" },
+          { file: "/images/galleries/lens/lens-43.jpg", label: "Yanqi Lake Shore", location: "Beijing, China" },
+          { file: "/images/galleries/lens/lens-44.jpg", label: "Yanqi Lake Evening", location: "Beijing, China" },
+          { file: "/images/galleries/lens/lens-45.jpg", label: "Early Spring Flowers", location: "France" }
+        ]
+      },
+      travel: {
+        title: "Roads Wall",
+        intro: "Roads, cities, coastlines, mountains, and the feeling of moving through them.",
+        altPrefix: "Travel photograph",
+        photos: [
+          { file: "/images/galleries/travel/travel-01.jpg", label: "Barcelona", location: "Barcelona, Spain" },
+          { file: "/images/galleries/travel/travel-02.jpg", label: "Barcelona Afterglow", location: "Barcelona, Spain" },
+          { file: "/images/galleries/travel/travel-03.jpg", label: "White Sand Lake", location: "Baisha Lake, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-04.jpg", label: "German Alps", location: "Bavaria, Germany" },
+          { file: "/images/galleries/travel/travel-05.jpg", label: "Snow Mountains Near Kashgar", location: "Kashgar Prefecture, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-06.jpg", label: "Horse Ride Near Kashgar", location: "Kashgar, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-07.jpg", label: "Malaga", location: "Malaga, Spain" },
+          { file: "/images/galleries/travel/travel-08.jpg", label: "Malaga Beach", location: "Malaga, Spain" },
+          { file: "/images/galleries/travel/travel-09.jpg", label: "Malaga Sunset", location: "Malaga, Spain" },
+          { file: "/images/galleries/travel/travel-10.jpg", label: "Milan Cathedral", location: "Milan, Italy" },
+          { file: "/images/galleries/travel/travel-11.jpg", label: "BMW Museum", location: "Munich, Germany" },
+          { file: "/images/galleries/travel/travel-12.jpg", label: "Nuremberg Church", location: "Nuremberg, Germany" },
+          { file: "/images/galleries/travel/travel-13.jpg", label: "Rainbow Mountains", location: "Zhangye Danxia, Gansu, China" },
+          { file: "/images/galleries/travel/travel-14.jpg", label: "Qinhuangdao Wildlife Park", location: "Qinhuangdao, Hebei, China" },
+          { file: "/images/galleries/travel/travel-15.jpg", label: "Desert Highway", location: "Northwest China" },
+          { file: "/images/galleries/travel/travel-16.jpg", label: "Fireworks by the Bay", location: "Shuangyue Bay, Huizhou, China" },
+          { file: "/images/galleries/travel/travel-17.jpg", label: "Tashkurgan", location: "Tashkurgan, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-18.jpg", label: "Snow Peak Above Tashkurgan", location: "Tashkurgan, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-19.jpg", label: "Tianjin", location: "Tianjin, China" },
+          { file: "/images/galleries/travel/travel-20.jpg", label: "Wakhan Corridor", location: "Pamir Plateau, Xinjiang, China" },
+          { file: "/images/galleries/travel/travel-21.jpg", label: "Malaga Coast", location: "Malaga, Spain" },
+          { file: "/images/galleries/travel/travel-22.jpg", label: "Neuschwanstein and the Alps", location: "Bavaria, Germany" },
+          { file: "/images/galleries/travel/travel-23.jpg", label: "Acropolis of Athens", location: "Athens, Greece" },
+          { file: "/images/galleries/travel/travel-24.jpg", label: "University of Chinese Academy of Sciences", location: "Yanqi Lake, Beijing, China" }
+        ]
+      }
+    };
+
+    const dialog = document.getElementById("life-gallery");
+    if (!dialog) return;
+
+    const title = dialog.querySelector("#life-gallery-title");
+    const intro = dialog.querySelector(".life-gallery__intro");
+    const wall = dialog.querySelector(".kitchen-gallery__photos");
+    const viewer = dialog.querySelector(".life-gallery__viewer");
+    const viewerImage = viewer.querySelector("img");
+    const viewerCaption = viewer.querySelector(".life-gallery__viewer-caption");
+    const viewerClose = viewer.querySelector(".life-gallery__viewer-close");
+    const openButtons = document.querySelectorAll(".life-gallery__open");
+    const closeButton = dialog.querySelector(".kitchen-gallery__close");
+    const slotCount = 9;
+    const swapMs = 1800;
+    const layouts = ["layout-a", "layout-b", "layout-c"];
+    let nextPhoto = slotCount;
+    let timer = null;
+    let activeGallery = null;
+
+    function shuffledPhotos(photos) {
+      const copy = photos.slice();
+      for (let index = copy.length - 1; index > 0; index -= 1) {
+        const swapIndex = Math.floor(Math.random() * (index + 1));
+        const current = copy[index];
+        copy[index] = copy[swapIndex];
+        copy[swapIndex] = current;
+      }
+      return copy;
+    }
+
+    function renderPhotos(gallery) {
+      const layout = layouts[Math.floor(Math.random() * layouts.length)];
+      const selectedPhotos = shuffledPhotos(gallery.photos).slice(0, slotCount);
+      wall.className = "kitchen-gallery__photos " + layout;
+      wall.innerHTML = selectedPhotos.map(function (photo, index) {
+        return [
+          '<figure class="kitchen-photo kitchen-photo--' + index + '" style="--i:' + index + '" data-paused="false" data-photo-index="' + index + '">',
+          '<img src="' + photo.file + '" alt="' + gallery.altPrefix + ': ' + photo.label + ', ' + photo.location + '" loading="lazy">',
+          '<figcaption><span>' + photo.label + '</span><small>' + photo.location + '</small></figcaption>',
+          '</figure>'
+        ].join("");
+      }).join("");
+      wall.querySelectorAll(".kitchen-photo").forEach(function (slot) {
+        slot.addEventListener("mouseenter", function () {
+          slot.dataset.paused = "true";
+        });
+        slot.addEventListener("mouseleave", function () {
+          slot.dataset.paused = "false";
+        });
+        slot.addEventListener("click", function () {
+          openViewer(slot);
+        });
+      });
+      nextPhoto = selectedPhotos.length;
+      wall.querySelectorAll(".kitchen-photo").forEach(function (slot, index) {
+        slot.dataset.photoIndex = String(gallery.photos.indexOf(selectedPhotos[index]));
+      });
+    }
+
+    function openViewer(slot) {
+      const image = slot.querySelector("img");
+      const caption = slot.querySelector("figcaption");
+      stopRotation();
+      slot.dataset.paused = "true";
+      viewerImage.src = image.src;
+      viewerImage.alt = image.alt;
+      viewerCaption.innerHTML = caption.innerHTML;
+      viewer.hidden = false;
+    }
+
+    function closeViewer() {
+      viewer.hidden = true;
+      viewerImage.removeAttribute("src");
+      wall.querySelectorAll(".kitchen-photo").forEach(function (slot) {
+        slot.dataset.paused = "false";
+      });
+      if (dialog.open) startRotation();
+    }
+
+    function preloadPhoto(photo, callback) {
+      const preloaded = new Image();
+      preloaded.onload = function () {
+        callback();
+      };
+      preloaded.onerror = function () {
+        callback();
+      };
+      preloaded.src = photo.file;
+    }
+
+    function updateSlot(slot, photo, photoIndex, gallery) {
+      if (slot.dataset.photoIndex === String(photoIndex)) return;
+      slot.dataset.updating = "true";
+      preloadPhoto(photo, function () {
+        if (slot.dataset.paused === "true") {
+          slot.dataset.updating = "false";
+          return;
+        }
+        const image = slot.querySelector("img");
+        const caption = slot.querySelector("figcaption");
+        const nextImage = document.createElement("img");
+        const nextSrc = photo.file;
+
+        nextImage.className = "kitchen-photo__next";
+        nextImage.src = nextSrc;
+        nextImage.alt = gallery.altPrefix + ": " + photo.label + ", " + photo.location;
+        slot.appendChild(nextImage);
+        window.requestAnimationFrame(function () {
+          nextImage.classList.add("is-visible");
+        });
+        window.setTimeout(function () {
+          image.src = nextSrc;
+          image.alt = gallery.altPrefix + ": " + photo.label + ", " + photo.location;
+          caption.innerHTML = "<span>" + photo.label + "</span><small>" + photo.location + "</small>";
+          slot.dataset.photoIndex = String(photoIndex);
+          nextImage.remove();
+          slot.dataset.updating = "false";
+        }, 920);
+      });
+    }
+
+    function nextPhotoIndexFor(slot, gallery) {
+      let attempts = 0;
+      let photoIndex = nextPhoto % gallery.photos.length;
+      while (slot.dataset.photoIndex === String(photoIndex) && attempts < gallery.photos.length) {
+        nextPhoto += 1;
+        photoIndex = nextPhoto % gallery.photos.length;
+        attempts += 1;
+      }
+      nextPhoto += 1;
+      return photoIndex;
+    }
+
+    function rotateOnePhoto() {
+      if (!activeGallery) return;
+      const slots = Array.prototype.slice.call(wall.querySelectorAll(".kitchen-photo"));
+      const visibleIndexes = slots.map(function (slot) {
+        return slot.dataset.photoIndex;
+      });
+      const available = slots.filter(function (slot) {
+        return slot.dataset.paused !== "true" &&
+          slot.dataset.updating !== "true" &&
+          !slot.querySelector(".kitchen-photo__next");
+      });
+      if (!available.length) return;
+      const slot = available[nextPhoto % available.length];
+      let photoIndex = nextPhotoIndexFor(slot, activeGallery);
+      let attempts = 0;
+      while (visibleIndexes.indexOf(String(photoIndex)) !== -1 && attempts < activeGallery.photos.length) {
+        photoIndex = nextPhotoIndexFor(slot, activeGallery);
+        attempts += 1;
+      }
+      updateSlot(slot, activeGallery.photos[photoIndex], photoIndex, activeGallery);
+    }
+
+    function startRotation() {
+      if (timer) return;
+      timer = window.setInterval(rotateOnePhoto, swapMs);
+    }
+
+    function stopRotation() {
+      if (!timer) return;
+      window.clearInterval(timer);
+      timer = null;
+    }
+
+    openButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const gallery = galleries[button.dataset.gallery];
+        if (!gallery) return;
+        stopRotation();
+        activeGallery = gallery;
+        title.textContent = gallery.title;
+        intro.textContent = gallery.intro;
+        renderPhotos(gallery);
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "");
+        }
+        startRotation();
+      });
+    });
+
+    closeButton.addEventListener("click", function () {
+      dialog.close();
+    });
+
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) dialog.close();
+    });
+
+    viewer.addEventListener("click", function (event) {
+      if (event.target === viewer) closeViewer();
+    });
+
+    viewerClose.addEventListener("click", closeViewer);
+
+    dialog.addEventListener("cancel", function (event) {
+      if (!viewer.hidden) {
+        event.preventDefault();
+        closeViewer();
+      }
+    });
+
+    dialog.addEventListener("close", function () {
+      closeViewer();
+      stopRotation();
+    });
+  }());
+</script>
+
 ---
 
 # 📣 News
 
-- **2026.05** – I will attend **ISMRM 2026** in **Cape Town** from **May 7–19**; happy to connect🫶
-- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS**!🚀
-- **2026.04** – My application to **NeuroHack** was accepted🎉; I will attend the **NeuroHack Workshop** at the **University of Washington, Seattle** from **July 12–25**
-- **2026.02** – Received **Educational Stipend Award**, ISMRM 2026  🎉
+- **2026.05** – I will attend **ISMRM 2026** in **Cape Town** from **May 7–19**; happy to connect 🫶
+- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS**! 🚀
+- **2026.04** – My application to **NeuroHack** was accepted; I will attend the **NeuroHack Workshop** at the **University of Washington, Seattle** from **July 12–25**
+- **2026.02** – Received **Educational Stipend Award**, ISMRM 2026
 - **2026.02** – Our work ***Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories*** was accepted as a **PowerPitch Oral** at **ISMRM 2026**  
-- **2025.09** – Joined the **MIND Team at CEA / Inria** as a PhD researcher
+- **2025.09** – Joined the **MIND Team at CEA / Inria** as a PhD researcher 🕵️
 - **2025.05** – Presented work on improved **spectral CT reconstruction** at **Fully3D 2025 (Oral)**  
 - **2024.05** – Presented work on **sequentially-scanning DECT imaging** and received **Best Paper Finalist (Top 2%)** and **Student Travel Grant** at **ISBI 2024**  🎉
 

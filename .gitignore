@@ -8,3 +8,7 @@ vendor/bundle/
 .jekyll-metadata
 .jekyll-server*.log
 run_server.local.cmd
+images/kitchen/
+images/lens/
+images/run/
+images/travel/
