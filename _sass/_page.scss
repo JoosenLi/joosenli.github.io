@@ -111,6 +111,26 @@
     font-size: $type-size-6;
   }
 
+  .research-overview {
+    margin: 0.4em auto 1.2em;
+    max-width: 88%;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 760px;
+      border-radius: 4px;
+      box-shadow: 0 1px 8px rgba(#000, 0.08);
+    }
+  }
+
+  @include breakpoint($small) {
+    .research-overview {
+      max-width: 100%;
+    }
+  }
+
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;

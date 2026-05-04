@@ -14,8 +14,14 @@ redirect_from:
 
 My research centers on **deep learning for accelerated whole-brain, high-resolution functional MRI reconstruction**, with a particular emphasis on combining self-supervised learning and transfer learning with physical modeling of MRI reconstruction. My main research interests include:
 
+
 - **Deep learning-based reconstruction** from undersampled medical imaging data
-- **Joint optimization of non-Cartesian trajectories and physics-driven reconstruction**
+- **Joint optimization of non-Cartesian trajectories and physics-driven fMRI reconstruction**
+
+<figure class="research-overview">
+  <img src="/images/location-fMRI-Reconstruction.png" alt="Overview of the role of fMRI reconstruction in the imaging and analysis pipeline">
+</figure>
+
 - **Foundation models** for brain imaging
 - fMRI based **brain decoding**
 - Future extensions toward **non-invasive brain-computer interfaces**
@@ -40,11 +46,14 @@ Outside of these, I enjoy **road trips and driving**🚗, **traveling**🌍, and
 
 # 📣 News
 
+- **2026.05** – I will attend **ISMRM 2026** in **Cape Town** from **May 7–19**; happy to connect🫶
+- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS**!🚀
+- **2026.04** – My application to **NeuroHack** was accepted🎉; I will attend the **NeuroHack Workshop** at the **University of Washington, Seattle** from **July 12–25**
 - **2026.02** – Received **Educational Stipend Award**, ISMRM 2026  🎉
 - **2026.02** – Our work ***Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories*** was accepted as a **PowerPitch Oral** at **ISMRM 2026**  
 - **2025.09** – Joined the **MIND Team at CEA / Inria** as a PhD researcher
 - **2025.05** – Presented work on improved **spectral CT reconstruction** at **Fully3D 2025 (Oral)**  
-- **2024.05** – Presented work on **sequentially-scanning DECT imaging** and received **Best Paper Finalist (Top 2%)** and **Student Travel Grant** at **ISBI 2024**  🎉🎉
+- **2024.05** – Presented work on **sequentially-scanning DECT imaging** and received **Best Paper Finalist (Top 2%)** and **Student Travel Grant** at **ISBI 2024**  🎉
 
 ---
 
@@ -75,7 +84,7 @@ Outside of these, I enjoy **road trips and driving**🚗, **traveling**🌍, and
 
 **Sequential-Scanning Dual-Energy CT Imaging Using High Temporal Resolution Image Reconstruction and Error-Compensated Material Basis Image Generation**  
 **Qiaoxin Li**, Ruifeng Chen, Peng Wang, Guotao Quan, Yanfeng Du, Dong Liang, Yinsheng Li  
-*IEEE TRPMS – Under Review*  
+*IEEE TRPMS*  
 [[preprint]](https://arxiv.org/pdf/2408.14754)
 
 ---

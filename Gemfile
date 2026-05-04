@@ -16,7 +16,10 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# wdm 0.1.1 does not compile on modern Ruby; Jekyll can run without it.
+gem "wdm", "~> 0.1.0" if Gem.win_platform? && RUBY_VERSION < "3.0"
+gem "tzinfo-data" if Gem.win_platform?
+gem "webrick", "~> 1.8" if RUBY_VERSION >= "3.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

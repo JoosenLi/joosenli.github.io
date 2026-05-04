@@ -1,3 +1,10 @@
 _site/
 push.sh
 .DS_Store
+.bundle/
+vendor/bundle/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+.jekyll-server*.log
+run_server.local.cmd
