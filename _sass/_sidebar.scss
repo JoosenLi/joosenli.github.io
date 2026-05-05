@@ -14,7 +14,7 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(2.5 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -81,9 +81,13 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 75px;
+  width: 100px;
   // set width only, for non-square avatars
   // height: 36px;
+
+  @include breakpoint($medium) {
+    width: 120px;
+  }
 
   @include breakpoint($large) {
     display: block;
@@ -92,7 +96,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 220px;
     min-width: 75px;
     border-radius: 50%;
 
@@ -126,6 +130,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+.author__name span {
+  display: block;
+}
+
+.author__name-cn {
+  margin-top: 0.15rem;
 }
 
 .sidebar .author__name {

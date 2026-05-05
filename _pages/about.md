@@ -247,11 +247,18 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
     const openButtons = document.querySelectorAll(".life-gallery__open");
     const closeButton = dialog.querySelector(".kitchen-gallery__close");
     const slotCount = 9;
-    const swapMs = 1800;
+    const swapMs = 2400;
+    const fragmentRows = 4;
+    const fragmentCols = 4;
+    const assetVersion = "20260505b";
     const layouts = ["layout-a", "layout-b", "layout-c"];
     let nextPhoto = slotCount;
     let timer = null;
     let activeGallery = null;
+
+    function photoSrc(photo) {
+      return photo.file + "?v=" + assetVersion;
+    }
 
     function shuffledPhotos(photos) {
       const copy = photos.slice();
@@ -271,7 +278,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       wall.innerHTML = selectedPhotos.map(function (photo, index) {
         return [
           '<figure class="kitchen-photo kitchen-photo--' + index + '" style="--i:' + index + '" data-paused="false" data-photo-index="' + index + '">',
-          '<img src="' + photo.file + '" alt="' + gallery.altPrefix + ': ' + photo.label + ', ' + photo.location + '" loading="lazy">',
+          '<img src="' + photoSrc(photo) + '" alt="' + gallery.altPrefix + ': ' + photo.label + ', ' + photo.location + '" loading="lazy">',
           '<figcaption><span>' + photo.label + '</span><small>' + photo.location + '</small></figcaption>',
           '</figure>'
         ].join("");
@@ -321,7 +328,25 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       preloaded.onerror = function () {
         callback();
       };
-      preloaded.src = photo.file;
+      preloaded.src = photoSrc(photo);
+    }
+
+    function buildFragments(src) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "kitchen-photo__shards";
+      for (let row = 0; row < fragmentRows; row += 1) {
+        for (let col = 0; col < fragmentCols; col += 1) {
+          const tile = document.createElement("span");
+          const x = fragmentCols === 1 ? 0 : (col / (fragmentCols - 1)) * 100;
+          const y = fragmentRows === 1 ? 0 : (row / (fragmentRows - 1)) * 100;
+          tile.className = "kitchen-photo__tile";
+          tile.style.backgroundImage = 'url("' + src + '")';
+          tile.style.backgroundPosition = x + "% " + y + "%";
+          tile.style.animationDelay = ((row + col) * 0.035 + Math.random() * 0.08) + "s";
+          wrapper.appendChild(tile);
+        }
+      }
+      return wrapper;
     }
 
     function updateSlot(slot, photo, photoIndex, gallery) {
@@ -334,31 +359,31 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
         }
         const image = slot.querySelector("img");
         const caption = slot.querySelector("figcaption");
-        const nextImage = document.createElement("img");
-        const nextSrc = photo.file;
+        const nextSrc = photoSrc(photo);
+        const fragments = buildFragments(nextSrc);
 
-        nextImage.className = "kitchen-photo__next";
-        nextImage.src = nextSrc;
-        nextImage.alt = gallery.altPrefix + ": " + photo.label + ", " + photo.location;
-        slot.appendChild(nextImage);
+        slot.classList.add("is-fragmenting");
+        slot.appendChild(fragments);
         window.requestAnimationFrame(function () {
-          nextImage.classList.add("is-visible");
+          fragments.classList.add("is-visible");
         });
         window.setTimeout(function () {
           image.src = nextSrc;
           image.alt = gallery.altPrefix + ": " + photo.label + ", " + photo.location;
           caption.innerHTML = "<span>" + photo.label + "</span><small>" + photo.location + "</small>";
           slot.dataset.photoIndex = String(photoIndex);
-          nextImage.remove();
+          fragments.remove();
+          slot.classList.remove("is-fragmenting");
           slot.dataset.updating = "false";
-        }, 920);
+        }, 1050);
       });
     }
 
-    function nextPhotoIndexFor(slot, gallery) {
+    function nextPhotoIndexFor(slot, gallery, reservedIndexes) {
       let attempts = 0;
       let photoIndex = nextPhoto % gallery.photos.length;
-      while (slot.dataset.photoIndex === String(photoIndex) && attempts < gallery.photos.length) {
+      while ((slot.dataset.photoIndex === String(photoIndex) || reservedIndexes.indexOf(String(photoIndex)) !== -1) &&
+        attempts < gallery.photos.length) {
         nextPhoto += 1;
         photoIndex = nextPhoto % gallery.photos.length;
         attempts += 1;
@@ -367,7 +392,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       return photoIndex;
     }
 
-    function rotateOnePhoto() {
+    function rotatePhotos() {
       if (!activeGallery) return;
       const slots = Array.prototype.slice.call(wall.querySelectorAll(".kitchen-photo"));
       const visibleIndexes = slots.map(function (slot) {
@@ -376,22 +401,24 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       const available = slots.filter(function (slot) {
         return slot.dataset.paused !== "true" &&
           slot.dataset.updating !== "true" &&
-          !slot.querySelector(".kitchen-photo__next");
+          !slot.querySelector(".kitchen-photo__shards");
       });
       if (!available.length) return;
-      const slot = available[nextPhoto % available.length];
-      let photoIndex = nextPhotoIndexFor(slot, activeGallery);
-      let attempts = 0;
-      while (visibleIndexes.indexOf(String(photoIndex)) !== -1 && attempts < activeGallery.photos.length) {
-        photoIndex = nextPhotoIndexFor(slot, activeGallery);
-        attempts += 1;
+      const shuffledSlots = shuffledPhotos(available);
+      const updateCount = Math.min(available.length, 3);
+      const reservedIndexes = visibleIndexes.slice();
+      for (let index = 0; index < updateCount; index += 1) {
+        const slot = shuffledSlots[index];
+        const photoIndex = nextPhotoIndexFor(slot, activeGallery, reservedIndexes);
+        if (reservedIndexes.indexOf(String(photoIndex)) !== -1) continue;
+        reservedIndexes.push(String(photoIndex));
+        updateSlot(slot, activeGallery.photos[photoIndex], photoIndex, activeGallery);
       }
-      updateSlot(slot, activeGallery.photos[photoIndex], photoIndex, activeGallery);
     }
 
     function startRotation() {
       if (timer) return;
-      timer = window.setInterval(rotateOnePhoto, swapMs);
+      timer = window.setInterval(rotatePhotos, swapMs);
     }
 
     function stopRotation() {
