@@ -451,7 +451,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 # 📣 News
 
 - **2026.05** – I will attend **ISMRM 2026** in **Cape Town** from **May 7–19**; happy to connect 🫶
-- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS**! 🚀
+- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS** and is now available online! [[paper]](https://ieeexplore.ieee.org/document/11505967) 🚀
 - **2026.04** – My application to **NeuroHack** was accepted; I will attend the **NeuroHack Workshop** at the **University of Washington, Seattle** from **July 12–25**
 - **2026.02** – Received **Educational Stipend Award**, ISMRM 2026
 - **2026.02** – Our work ***Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories*** was accepted as a **PowerPitch Oral** at **ISMRM 2026**  
@@ -489,7 +489,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 **Sequential-Scanning Dual-Energy CT Imaging Using High Temporal Resolution Image Reconstruction and Error-Compensated Material Basis Image Generation**  
 **Qiaoxin Li**, Ruifeng Chen, Peng Wang, Guotao Quan, Yanfeng Du, Dong Liang, Yinsheng Li  
 *IEEE TRPMS*  
-[[preprint]](https://arxiv.org/pdf/2408.14754)
+[[paper]](https://ieeexplore.ieee.org/document/11505967)
 
 ---
 
