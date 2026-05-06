@@ -473,18 +473,67 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
   }());
 </script>
 
----
+<section class="news-board" aria-labelledby="-news">
+  <div class="news-board__title-row">
+    <h1 id="-news">📣 News</h1>
+    <span class="news-board__updated">Updated May 2026</span>
+  </div>
 
-# 📣 News
+  <div class="news-board__featured">
+    <article class="news-card">
+      <span class="news-card__tag">Upcoming</span>
+      <time datetime="2026-05">2026.05</time>
+      <h2>ISMRM 2026 in Cape Town</h2>
+      <p>I will attend <strong>ISMRM 2026</strong> in <strong>Cape Town</strong> from <strong>May 7–19</strong>; happy to connect.</p>
+      <a href="http://echo.ismrm.org/p/ISMRM2026/452-02-006">View abstract</a>
+    </article>
 
-- **2026.05** – I will attend **ISMRM 2026** in **Cape Town** from **May 7–19**; happy to connect 🫶
-- **2026.04** – I’m thrilled to share that my first journal paper, based on my Master’s research on INR for sequential-scanning dual-energy CT imaging, has been accepted for publication in **IEEE TRPMS** and is now available online! [[paper]](https://ieeexplore.ieee.org/document/11505967) 🚀
-- **2026.04** – My application to **NeuroHack** was accepted; I will attend the **NeuroHack Workshop** at the **University of Washington, Seattle** from **July 12–25**
-- **2026.02** – Received **Educational Stipend Award**, ISMRM 2026
-- **2026.02** – Our work ***Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories*** was accepted as a **PowerPitch Oral** at **ISMRM 2026**  
-- **2025.09** – Joined the **MIND Team at CEA / Inria** as a PhD researcher 🕵️
-- **2025.05** – Presented work on improved **spectral CT reconstruction** at **Fully3D 2025 (Oral)**  
-- **2024.05** – Presented work on **sequentially-scanning DECT imaging** and received **Best Paper Finalist (Top 2%)** and **Student Travel Grant** at **ISBI 2024**  🎉
+    <article class="news-card news-card--highlight">
+      <span class="news-card__tag">Paper Online</span>
+      <time datetime="2026-04">2026.04</time>
+      <h2>First Journal Paper Accepted by IEEE TRPMS</h2>
+      <p>My Master’s research on INR for sequential-scanning dual-energy CT imaging has been accepted and is now available online.</p>
+      <a href="https://ieeexplore.ieee.org/document/11505967">Read the paper</a>
+    </article>
+
+    <article class="news-card">
+      <span class="news-card__tag">Workshop</span>
+      <time datetime="2026-04">2026.04</time>
+      <h2>NeuroHack Workshop</h2>
+      <p>My application to <strong>NeuroHack</strong> was accepted; I will attend the workshop at the <strong>University of Washington, Seattle</strong> from <strong>July 12–25</strong>.</p>
+      <a href="https://neurohackademy.org/">Workshop site</a>
+    </article>
+  </div>
+
+  <details class="news-board__archive">
+    <summary>
+      <span>Earlier Updates</span>
+      <span>5 items</span>
+    </summary>
+    <ol class="news-timeline">
+      <li>
+        <time datetime="2026-02">2026.02</time>
+        <span>Received <strong>Educational Stipend Award</strong>, ISMRM 2026.</span>
+      </li>
+      <li>
+        <time datetime="2026-02">2026.02</time>
+        <span>Our work <strong><em>Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories</em></strong> was accepted as a <strong>PowerPitch Oral</strong> at <strong>ISMRM 2026</strong>. <a href="http://echo.ismrm.org/p/ISMRM2026/452-02-006">[abstract]</a></span>
+      </li>
+      <li>
+        <time datetime="2025-09">2025.09</time>
+        <span>Joined the <strong>MIND Team at CEA / Inria</strong> as a PhD researcher.</span>
+      </li>
+      <li>
+        <time datetime="2025-05">2025.05</time>
+        <span>Presented work on improved <strong>spectral CT reconstruction</strong> at <strong>Fully3D 2025 (Oral)</strong>.</span>
+      </li>
+      <li>
+        <time datetime="2024-05">2024.05</time>
+        <span>Presented work on <strong>sequentially-scanning DECT imaging</strong> and received <strong>Best Paper Finalist (Top 2%)</strong> and <strong>Student Travel Grant</strong> at <strong>ISBI 2024</strong>.</span>
+      </li>
+    </ol>
+  </details>
+</section>
 
 ---
 
@@ -498,7 +547,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 
 **Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
-*ISMRM 2026 – PowerPitch Oral*
+*ISMRM 2026 – PowerPitch Oral* [[abstract]](http://echo.ismrm.org/p/ISMRM2026/452-02-006)
 
 ---
 
@@ -561,22 +610,31 @@ Thesis:
 
 ---
 
-# 💬 Invited Talks
+<section class="connect-map" aria-labelledby="connect-map-title">
+  <div class="connect-map__header">
+    <h2 id="connect-map-title">Looking forward to our connection 🌍</h2>
+  </div>
+  <div class="connect-map__legend" aria-label="Map legend">
+    <span><i class="connect-map__dot connect-map__dot--home"></i>Home / lived</span>
+    <span><i class="connect-map__dot connect-map__dot--work"></i>Study / work</span>
+    <span><i class="connect-map__dot connect-map__dot--visited"></i>Visited</span>
+    <span><i class="connect-map__dot connect-map__dot--upcoming"></i>Upcoming visit</span>
+  </div>
+  <div class="connect-map__canvas" role="img" aria-label="World map showing visited and upcoming connection locations">
+    <img src="/images/global_map.png" alt="Hand-drawn world map">
 
-(To be Invited🌱)
-
----
-
-# 💻 Internships
-
-<!-- **NeuroSpin, CEA**  
-*2023.09 – 2024.12*
-
-Ultra-High-Field High-Resolution Whole-Brain fMRI Reconstruction  
-Worked on reconstruction of **11.7T high-resolution fMRI data**.
-
---- -->
-(To be Done🌱)
+    <span class="connect-map__marker connect-map__marker--home" style="--x: 78.0%; --y: 37.5%;" data-label="China" data-note="born / lived"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 59.6%; --y: 51.8%;" data-label="United Arab Emirates" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 58.8%; --y: 50.9%;" data-label="Qatar" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--work" style="--x: 45.5%; --y: 38.4%;" data-label="France" data-note="study / work"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 52.8%; --y: 42.0%;" data-label="Greece" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 50.5%; --y: 36.6%;" data-label="Germany" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 49.0%; --y: 40.5%;" data-label="Italy" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 43.9%; --y: 43.1%;" data-label="Spain" data-note="visited"></span>
+    <span class="connect-map__marker connect-map__marker--upcoming" style="--x: 51.2%; --y: 76.5%;" data-label="South Africa" data-note="upcoming visit"></span>
+    <span class="connect-map__marker connect-map__marker--upcoming" style="--x: 13.2%; --y: 30.4%;" data-label="United States" data-note="upcoming visit"></span>
+  </div>
+</section>
 
 <span class='anchor' id='blog'></span>
 
