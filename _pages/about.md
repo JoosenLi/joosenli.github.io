@@ -481,9 +481,9 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 
   <div class="news-board__featured">
     <article class="news-card news-card--highlight">
-      <span class="news-card__tag">Early Accept</span>
+      <span class="news-card__tag">Paper Acceptance</span>
       <time datetime="2026-05">2026.05</time>
-      <h2>DD-INR Accepted to MICCAI 2026</h2>
+      <h2>Submission early accepted to MICCAI 2026</h2>
       <p><strong>DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction</strong> was early accepted by <strong>MICCAI 2026</strong> (top 9%). See you in <strong>Strasbourg</strong>.</p>
     </article>
 
