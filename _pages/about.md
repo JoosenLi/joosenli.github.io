@@ -480,6 +480,13 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
   </div>
 
   <div class="news-board__featured">
+    <article class="news-card news-card--highlight">
+      <span class="news-card__tag">Early Accept</span>
+      <time datetime="2026-05">2026.05</time>
+      <h2>DD-INR Accepted to MICCAI 2026</h2>
+      <p><strong>DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction</strong> was early accepted by <strong>MICCAI 2026</strong> (top 9%). See you in <strong>Strasbourg</strong>.</p>
+    </article>
+
     <article class="news-card">
       <span class="news-card__tag">Upcoming</span>
       <time datetime="2026-05">2026.05</time>
@@ -543,7 +550,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 
 **DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
-*Under Review*
+*MICCAI 2026*
 
 **Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
