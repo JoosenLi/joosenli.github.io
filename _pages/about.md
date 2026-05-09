@@ -503,21 +503,18 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       <a href="https://ieeexplore.ieee.org/document/11505967">Read the paper</a>
     </article>
 
-    <article class="news-card">
-      <span class="news-card__tag">Workshop</span>
-      <time datetime="2026-04">2026.04</time>
-      <h2>NeuroHack Workshop</h2>
-      <p>My application to <strong>NeuroHack</strong> was accepted; I will attend the workshop at the <strong>University of Washington, Seattle</strong> from <strong>July 12–25</strong>.</p>
-      <a href="https://neurohackademy.org/">Workshop site</a>
-    </article>
   </div>
 
   <details class="news-board__archive">
     <summary>
       <span>Earlier Updates</span>
-      <span>5 items</span>
+      <span>6 items</span>
     </summary>
     <ol class="news-timeline">
+      <li>
+        <time datetime="2026-04">2026.04</time>
+        <span>My application to <strong>NeuroHack</strong> was accepted; I will attend the workshop at the <strong>University of Washington, Seattle</strong> from <strong>July 12–25</strong>. <a href="https://neurohackademy.org/">[workshop site]</a></span>
+      </li>
       <li>
         <time datetime="2026-02">2026.02</time>
         <span>Received <strong>Educational Stipend Award</strong>, ISMRM 2026.</span>
