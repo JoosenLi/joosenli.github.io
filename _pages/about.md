@@ -476,7 +476,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 <section class="news-board" aria-labelledby="-news">
   <div class="news-board__title-row">
     <h1 id="-news">📣 News</h1>
-    <span class="news-board__updated">Updated May 2026</span>
+    <span class="news-board__updated">Updated June 2026</span>
   </div>
 
   <div class="news-board__featured">
@@ -488,11 +488,11 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
     </article>
 
     <article class="news-card">
-      <span class="news-card__tag">Upcoming</span>
-      <time datetime="2026-05">2026.05</time>
-      <h2>ISMRM 2026 in Cape Town</h2>
-      <p>I will attend <strong>ISMRM 2026</strong> in <strong>Cape Town</strong> from <strong>May 7–19</strong>; happy to connect.</p>
-      <a href="http://echo.ismrm.org/p/ISMRM2026/452-02-006">View abstract</a>
+      <span class="news-card__tag">Workshop</span>
+      <time datetime="2026-07">2026.07</time>
+      <h2>NeuroHack Workshop in Seattle</h2>
+      <p>My application to <strong>NeuroHack</strong> was accepted; I will attend the workshop at the <strong>University of Washington, Seattle</strong> from <strong>July 12–25</strong>. See you in <strong>Seattle</strong>.</p>
+      <a href="https://neurohackademy.org/">Workshop site</a>
     </article>
 
     <article class="news-card news-card--highlight">
@@ -512,8 +512,8 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
     </summary>
     <ol class="news-timeline">
       <li>
-        <time datetime="2026-04">2026.04</time>
-        <span>My application to <strong>NeuroHack</strong> was accepted; I will attend the workshop at the <strong>University of Washington, Seattle</strong> from <strong>July 12–25</strong>. <a href="https://neurohackademy.org/">[workshop site]</a></span>
+        <time datetime="2026-05">2026.05</time>
+        <span>I attended <strong>ISMRM 2026</strong> in <strong>Cape Town</strong> from <strong>May 7–19</strong>. <a href="http://echo.ismrm.org/p/ISMRM2026/452-02-006">[abstract]</a></span>
       </li>
       <li>
         <time datetime="2026-02">2026.02</time>
