@@ -146,7 +146,9 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
           { file: "/images/galleries/kitchen/kitchen-19.jpg", label: "Hot and Sour Cabbage", location: "Home Kitchen" },
           { file: "/images/galleries/kitchen/kitchen-20.jpg", label: "Stir-Fried Beef", location: "Home Kitchen" },
           { file: "/images/galleries/kitchen/kitchen-21.jpg", label: "Homemade Crispy Rice", location: "Home Kitchen" },
-          { file: "/images/galleries/kitchen/kitchen-22.jpg", label: "Homemade Pan-Fried Buns", location: "Home Kitchen" }
+          { file: "/images/galleries/kitchen/kitchen-22.jpg", label: "Homemade Pan-Fried Buns", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-23.jpg", label: "Lemon Pan-Fried Chicken", location: "Home Kitchen" },
+          { file: "/images/galleries/kitchen/kitchen-24.jpg", label: "Thai Spicy Shrimp", location: "Home Kitchen" }
         ]
       },
       lens: {
@@ -198,7 +200,33 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
           { file: "/images/galleries/lens/lens-42.jpg", label: "Yanqi Lake", location: "Beijing, China" },
           { file: "/images/galleries/lens/lens-43.jpg", label: "Yanqi Lake Shore", location: "Beijing, China" },
           { file: "/images/galleries/lens/lens-44.jpg", label: "Yanqi Lake Evening", location: "Beijing, China" },
-          { file: "/images/galleries/lens/lens-45.jpg", label: "Early Spring Flowers", location: "France" }
+          { file: "/images/galleries/lens/lens-45.jpg", label: "Early Spring Flowers", location: "France" },
+          { file: "/images/galleries/lens/lens-46.jpg", label: "Safari Rhino", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-47.jpg", label: "Watchful Antelope", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-48.jpg", label: "Safari Antelope", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-49.jpg", label: "Curious Antelope", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-50.jpg", label: "Safari Giraffe", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-51.jpg", label: "African Eagle", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-52.jpg", label: "Cheetah", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-53.jpg", label: "African Rhino", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-54.jpg", label: "African Buffalo", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-55.jpg", label: "Springbok", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-56.jpg", label: "Zebra", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-57.jpg", label: "Lone Buffalo", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-58.jpg", label: "Tiny Wild Detail", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-59.jpg", label: "Green Wild Trail", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-60.jpg", label: "Green Wild Trail II", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-61.jpg", label: "Charming Africa", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-62.jpg", label: "Baboon", location: "South Africa" },
+          { file: "/images/galleries/lens/lens-63.jpg", label: "Cape of Good Hope Seabird", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-64.jpg", label: "Endless Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-65.jpg", label: "Happy Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-66.jpg", label: "Free Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-67.jpg", label: "Facing the Sea", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-68.jpg", label: "Camps Bay Portrait", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-69.jpg", label: "Camps Bay Portrait II", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-70.jpg", label: "Cape Town Sunset", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/lens/lens-71.jpg", label: "Whale", location: "Cape Town, South Africa" }
         ]
       },
       travel: {
@@ -229,7 +257,50 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
           { file: "/images/galleries/travel/travel-21.jpg", label: "Malaga Coast", location: "Malaga, Spain" },
           { file: "/images/galleries/travel/travel-22.jpg", label: "Neuschwanstein and the Alps", location: "Bavaria, Germany" },
           { file: "/images/galleries/travel/travel-23.jpg", label: "Acropolis of Athens", location: "Athens, Greece" },
-          { file: "/images/galleries/travel/travel-24.jpg", label: "University of Chinese Academy of Sciences", location: "Yanqi Lake, Beijing, China" }
+          { file: "/images/galleries/travel/travel-24.jpg", label: "University of Chinese Academy of Sciences", location: "Yanqi Lake, Beijing, China" },
+          { file: "/images/galleries/travel/travel-25.jpg", label: "ISMRM 2026", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-26.jpg", label: "Bo-Kaap Colors", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-27.jpg", label: "Table Mountain", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-28.jpg", label: "Camps Bay", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-29.jpg", label: "Cape Town Sunset", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-30.jpg", label: "Driving to Cape Point", location: "Cape Peninsula, South Africa" },
+          { file: "/images/galleries/travel/travel-31.jpg", label: "Cape of Good Hope", location: "Cape Peninsula, South Africa" },
+          { file: "/images/galleries/travel/travel-32.jpg", label: "Pacific at Cape Point", location: "Cape Peninsula, South Africa" },
+          { file: "/images/galleries/travel/travel-33.jpg", label: "Cape of Good Hope Seabird", location: "Cape Peninsula, South Africa" },
+          { file: "/images/galleries/travel/travel-34.jpg", label: "African Penguins", location: "Boulders Beach, South Africa" },
+          { file: "/images/galleries/travel/travel-35.jpg", label: "Red-Eyed Penguin", location: "Boulders Beach, South Africa" },
+          { file: "/images/galleries/travel/travel-36.jpg", label: "Swimming Penguin", location: "Boulders Beach, South Africa" },
+          { file: "/images/galleries/travel/travel-37.jpg", label: "Pacific Sunset", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-38.jpg", label: "Endless Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-39.jpg", label: "Free Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-40.jpg", label: "Happy Pacific", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-41.jpg", label: "Whale Group", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-42.jpg", label: "Whale", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-43.jpg", label: "Pacific Seafood Feast", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-44.jpg", label: "Safari Rhino", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-45.jpg", label: "Rhino Encounter", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-46.jpg", label: "Elephant Encounter", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-47.jpg", label: "Happy Safari", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-48.jpg", label: "Watchful Antelope", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-49.jpg", label: "Safari Antelope", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-50.jpg", label: "Curious Antelope", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-51.jpg", label: "Safari Giraffe", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-52.jpg", label: "Cheetah", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-53.jpg", label: "Zebra", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-54.jpg", label: "African Buffalo", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-55.jpg", label: "Lone Buffalo", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-56.jpg", label: "Springbok", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-57.jpg", label: "Ostrich Courtship", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-58.jpg", label: "African Eagle", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-59.jpg", label: "The Ugly Five", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-60.jpg", label: "Rock Hyrax", location: "Table Mountain, South Africa" },
+          { file: "/images/galleries/travel/travel-61.jpg", label: "Roadside Baboon", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-62.jpg", label: "Baboon", location: "South Africa" },
+          { file: "/images/galleries/travel/travel-63.jpg", label: "Dassie on Table Mountain", location: "Table Mountain, South Africa" },
+          { file: "/images/galleries/travel/travel-64.jpg", label: "Camps Bay Portrait", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-65.jpg", label: "Camps Bay Portrait II", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-66.jpg", label: "Facing the Sea", location: "Cape Town, South Africa" },
+          { file: "/images/galleries/travel/travel-67.jpg", label: "Charming Africa", location: "South Africa" }
         ]
       }
     };
@@ -250,7 +321,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
     const swapMs = 2400;
     const fragmentRows = 4;
     const fragmentCols = 4;
-    const assetVersion = "20260505b";
+    const assetVersion = "20260620";
     const layouts = ["layout-a", "layout-b", "layout-c"];
     let nextPhoto = slotCount;
     let timer = null;
@@ -485,6 +556,16 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       <time datetime="2026-05">2026.05</time>
       <h2>Submission early accepted to MICCAI 2026</h2>
       <p><strong>DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction</strong> was early accepted by <strong>MICCAI 2026</strong> (top 9%). See you in <strong>Strasbourg</strong>.</p>
+      <a href="https://arxiv.org/pdf/2606.10756">arXiv</a>
+      <a href="http://github.com/JoosenLi/DD-INR">Code</a>
+    </article>
+
+    <article class="news-card">
+      <span class="news-card__tag">Workshop</span>
+      <time datetime="2026-08">2026.08</time>
+      <h2>AIDAS and ADAC Workshops in Cologne</h2>
+      <p>I will attend the <strong>AIDAS Workshop</strong> and <strong>ADAC Workshop</strong> in <strong>Cologne</strong> from <strong>August 31–September 4</strong>.</p>
+      <a href="https://adac.ornl.gov/19th-adac-symposium-workshop-august-31-september-3-2026/">ADAC workshop</a>
     </article>
 
     <article class="news-card">
@@ -495,25 +576,21 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       <a href="https://neurohackademy.org/">Workshop site</a>
     </article>
 
-    <article class="news-card news-card--highlight">
-      <span class="news-card__tag">Paper Online</span>
-      <time datetime="2026-04">2026.04</time>
-      <h2>First Journal Paper Accepted by IEEE TRPMS</h2>
-      <p>My Master’s research on INR for sequential-scanning dual-energy CT imaging has been accepted and is now available online.</p>
-      <a href="https://ieeexplore.ieee.org/document/11505967">Read the paper</a>
-    </article>
-
   </div>
 
   <details class="news-board__archive">
     <summary>
       <span>Earlier Updates</span>
-      <span>6 items</span>
+      <span>7 items</span>
     </summary>
     <ol class="news-timeline">
       <li>
         <time datetime="2026-05">2026.05</time>
         <span>I attended <strong>ISMRM 2026</strong> in <strong>Cape Town</strong> from <strong>May 7–19</strong>. <a href="http://echo.ismrm.org/p/ISMRM2026/452-02-006">[abstract]</a></span>
+      </li>
+      <li>
+        <time datetime="2026-04">2026.04</time>
+        <span>My Master’s research on INR for sequential-scanning dual-energy CT imaging was accepted by <strong>IEEE TRPMS</strong> and is available online. <a href="https://ieeexplore.ieee.org/document/11505967">[paper]</a></span>
       </li>
       <li>
         <time datetime="2026-02">2026.02</time>
@@ -547,7 +624,8 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 
 **DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
-*MICCAI 2026*
+*MICCAI 2026*  
+[[arXiv]](https://arxiv.org/pdf/2606.10756) [[code]](http://github.com/JoosenLi/DD-INR)
 
 **Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
