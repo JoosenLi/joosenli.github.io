@@ -715,7 +715,7 @@ Thesis:
     <span class="connect-map__marker connect-map__marker--visited" style="--x: 49.0%; --y: 40.5%;" data-label="Italy" data-note="visited"></span>
     <span class="connect-map__marker connect-map__marker--visited" style="--x: 43.9%; --y: 43.1%;" data-label="Spain" data-note="visited"></span>
     <span class="connect-map__marker connect-map__marker--visited" style="--x: 51.2%; --y: 76.5%;" data-label="South Africa" data-note="visited"></span>
-    <span class="connect-map__marker connect-map__marker--upcoming" style="--x: 13.2%; --y: 30.4%;" data-label="United States" data-note="upcoming visit"></span>
+    <span class="connect-map__marker connect-map__marker--visited" style="--x: 13.2%; --y: 30.4%;" data-label="United States" data-note="visited"></span>
   </div>
 </section>
 
