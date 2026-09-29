@@ -556,7 +556,7 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
       <time datetime="2026-05">2026.05</time>
       <h2>Submission early accepted to MICCAI 2026</h2>
       <p><strong>DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction</strong> was early accepted by <strong>MICCAI 2026</strong> (top 9%). See you in <strong>Strasbourg</strong>.</p>
-      <a href="https://arxiv.org/pdf/2606.10756">arXiv</a>
+      <a href="https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf">Paper</a>
       <a href="http://github.com/JoosenLi/DD-INR">Code</a>
     </article>
 
@@ -625,7 +625,11 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 **DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
 *MICCAI 2026*  
-[[arXiv]](https://arxiv.org/pdf/2606.10756) [[code]](http://github.com/JoosenLi/DD-INR)
+[[Paper]](https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf) [[code]](http://github.com/JoosenLi/DD-INR)
+
+<a class="publication-poster" href="https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf" aria-label="Read the DD-INR paper at MICCAI 2026">
+  <img src="{{ '/images/DD-INR.png' | relative_url }}" alt="DD-INR illustrated overview: dynamics-driven reconstruction for accelerated whole-brain functional MRI, MICCAI 2026." width="1672" height="941" loading="lazy" decoding="async">
+</a>
 
 **Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
