@@ -622,14 +622,42 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 
 ### MR Imaging
 
-**DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction**  
-**Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
-*MICCAI 2026*  
-[[Paper]](https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf) [[code]](http://github.com/JoosenLi/DD-INR)
-
-<a class="publication-poster" href="https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf" aria-label="Read the DD-INR paper at MICCAI 2026">
+<div class="publication-feature">
+<a class="publication-poster" href="{{ '/images/DD-INR.png' | relative_url }}" aria-label="Enlarge the DD-INR poster" aria-haspopup="dialog">
   <img src="{{ '/images/DD-INR.png' | relative_url }}" alt="DD-INR illustrated overview: dynamics-driven reconstruction for accelerated whole-brain functional MRI, MICCAI 2026." width="1672" height="941" loading="lazy" decoding="async">
 </a>
+<p class="publication-feature__text">
+<strong>DD-INR: Dynamics-Driven Implicit Neural Representation for Accelerated Whole-Brain Functional MRI Reconstruction</strong><br>
+<strong>Qiaoxin Li</strong>, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu<br>
+<em>MICCAI 2026</em><br>
+<a href="https://papers.miccai.org/miccai-2026/paper/2792_paper.pdf">[Paper]</a> <a href="http://github.com/JoosenLi/DD-INR">[code]</a>
+</p>
+</div>
+
+<dialog class="publication-lightbox" aria-label="DD-INR poster">
+  <button type="button" class="publication-lightbox__close" aria-label="Close poster">&times;</button>
+  <img src="{{ '/images/DD-INR.png' | relative_url }}" alt="DD-INR illustrated research overview." loading="lazy">
+</dialog>
+<script>
+(() => {
+  const dialog = document.querySelector('.publication-lightbox');
+  document.addEventListener('click', (event) => {
+    const trigger = event.target.closest('.publication-poster');
+    if (!trigger) return;
+    event.preventDefault();
+    const thumbnail = trigger.querySelector('img');
+    const enlarged = dialog.querySelector('img');
+    enlarged.src = trigger.href;
+    enlarged.alt = thumbnail.alt;
+    dialog.setAttribute('aria-label', thumbnail.alt);
+    dialog.showModal();
+  });
+  dialog.querySelector('button').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+})();
+</script>
 
 **Temporal Attention-Induced Scan-Specific fMRI Reconstruction Meets Time-Varying Trajectories**  
 **Qiaoxin Li**, Caini Pan, Pierre-Antoine Comby, Chaithya Giliyar Radhakrishna, Philippe Ciuciu  
@@ -643,10 +671,17 @@ You can find my **[CV](/files/CV-Qiaoxin.pdf)**, my **[LinkedIn](https://www.lin
 **Qiaoxin Li**, Dong Liang, Yinsheng Li  
 *Fully3D 2025 – Oral*
 
-**ACCELERATION: Sequential-scanning Dual-Energy Computed Tomography Imaging Using High Temporal Image Reconstruction and Temporal Extrapolation**  
-**Qiaoxin Li**, Dong Liang, Yinsheng Li  
-*ISBI 2024*  
-[[paper]](https://ieeexplore.ieee.org/document/10635705)
+<div class="publication-feature">
+<a class="publication-poster" href="{{ '/images/ACCELERATION.png' | relative_url }}" aria-label="Enlarge the ACCELERATION poster" aria-haspopup="dialog">
+  <img src="{{ '/images/ACCELERATION.png' | relative_url }}" alt="ACCELERATION illustrated overview of sequential-scanning dual-energy CT reconstruction and material basis generation." width="1672" height="941" loading="lazy" decoding="async">
+</a>
+<p class="publication-feature__text">
+<strong>ACCELERATION: Sequential-scanning Dual-Energy Computed Tomography Imaging Using High Temporal Image Reconstruction and Temporal Extrapolation</strong><br>
+<strong>Qiaoxin Li</strong>, Dong Liang, Yinsheng Li<br>
+<em>ISBI 2024</em><br>
+<a href="https://ieeexplore.ieee.org/document/10635705">[paper]</a>
+</p>
+</div>
 
 **Sequential-Scanning Dual-Energy CT Imaging Using High Temporal Resolution Image Reconstruction and Error-Compensated Material Basis Image Generation**  
 **Qiaoxin Li**, Ruifeng Chen, Peng Wang, Guotao Quan, Yanfeng Du, Dong Liang, Yinsheng Li  
