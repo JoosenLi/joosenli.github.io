@@ -26,9 +26,9 @@ author:
   name             : "LI Qiaoxin"
   name_cn          : "栗乔新"
   avatar           : "/images/profile.jpg?v=20260505"
-  bio              : "PhD Researcher at CEA / Inria MIND Team"
+  bio              : 'PhD Researcher at CEA / Inria <a href="https://mind.gitlabpages.inria.fr/team_page/">MIND Team</a>'
   location         : "Paris, France"
-  employer         : "CEA, MIND Team"
+  employer         : 'CEA, <a href="https://mind.gitlabpages.inria.fr/team_page/">MIND Team</a>'
   pubmed           :
   googlescholar    :
   email            : "joosenli@outlook.com"
